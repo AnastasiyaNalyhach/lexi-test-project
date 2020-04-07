@@ -1,11 +1,7 @@
 package data_managing.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ThirdPartyRequest {
@@ -14,8 +10,6 @@ public class ThirdPartyRequest {
     private String source;
     @JsonProperty("data")
     private Data data;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("source")
     public String getSource() {
