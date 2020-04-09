@@ -1,4 +1,4 @@
-package data_provider;
+package up_to_date;
 
 import annotations.JSON;
 import data_managing.ResourceReader;

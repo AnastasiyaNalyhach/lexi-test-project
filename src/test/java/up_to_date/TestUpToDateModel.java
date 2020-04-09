@@ -1,8 +1,9 @@
+package up_to_date;
+
 import annotations.JSON;
 import data_managing.PojoObjectMapper;
 import data_managing.models.Data;
 import data_managing.models.ThirdPartyRequest;
-import data_provider.BaseTest;
 import org.assertj.core.api.SoftAssertions;
 import org.testng.annotations.Test;
 
