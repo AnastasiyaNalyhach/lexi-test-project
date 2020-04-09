@@ -1,0 +1,13 @@
+{
+  "source": "partner1",
+  "data": {
+    "unid": "0012!D687",
+    "firstName": "John",
+    "lastName": "Doe",
+    "emailAddress": "@wolterskluwer.com",
+    "phoneNumber": "1-123-456-7",
+    "countryCode": "USA",
+    "consentForDetails": true,
+    "marketingConsent": true
+  }
+}

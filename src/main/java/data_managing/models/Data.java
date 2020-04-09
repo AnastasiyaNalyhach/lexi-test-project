@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Data {
 
     @JsonProperty("unid")
-    private Integer unid;
+    private String unid;
     @JsonProperty("firstName")
     private String firstName;
     @JsonProperty("lastName")
@@ -24,12 +24,12 @@ public class Data {
     private Boolean marketingConsent;
 
     @JsonProperty("unid")
-    public Integer getUnid() {
+    public String getUnid() {
         return unid;
     }
 
     @JsonProperty("unid")
-    public void setUnid(Integer unid) {
+    public void setUnid(String unid) {
         this.unid = unid;
     }
 
