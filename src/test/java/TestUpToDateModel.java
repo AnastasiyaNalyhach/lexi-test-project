@@ -27,9 +27,12 @@ public class TestUpToDateModel extends BaseTest {
         Map<String, Boolean> validationResult = areParametersValid(thirdPartyRequest.getData());
 
         SoftAssertions.assertSoftly(softly -> {
-            softly.assertThat(validationResult.get(ID_DATA_INDEX)).as("UserId format is valid").isTrue();
-            softly.assertThat(validationResult.get(PHONE_DATA_INDEX)).as("Phone number format is valid").isTrue();
-            softly.assertThat(validationResult.get(EMAIL_DATA_INDEX)).as("Email format is valid").isTrue();
+            softly.assertThat(validationResult.get(ID_DATA_INDEX))
+                    .as("UserId format is valid").isTrue();
+            softly.assertThat(validationResult.get(PHONE_DATA_INDEX))
+                    .as("Phone number format is valid").isTrue();
+            softly.assertThat(validationResult.get(EMAIL_DATA_INDEX))
+                    .as("Email format is valid").isTrue();
         });
     }
 
@@ -42,9 +45,12 @@ public class TestUpToDateModel extends BaseTest {
         Map<String, Boolean> validationResult = areParametersValid(thirdPartyRequest.getData());
 
         SoftAssertions.assertSoftly(softly -> {
-            softly.assertThat(validationResult.get(ID_DATA_INDEX)).as("UserId format is valid").isTrue();
-            softly.assertThat(validationResult.get(PHONE_DATA_INDEX)).as("Phone number format is valid").isTrue();
-            softly.assertThat(validationResult.get(EMAIL_DATA_INDEX)).as("Email format is valid").isTrue();
+            softly.assertThat(validationResult.get(ID_DATA_INDEX))
+                    .as("UserId format is valid").isFalse();
+            softly.assertThat(validationResult.get(PHONE_DATA_INDEX))
+                    .as("Phone number format is valid").isFalse();
+            softly.assertThat(validationResult.get(EMAIL_DATA_INDEX))
+                    .as("Email format is valid").isFalse();
         });
     }
 
